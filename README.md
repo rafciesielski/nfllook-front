@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rafciesielski/nfllook-front.svg?branch=master)](https://travis-ci.org/rafciesielski/nfllook-front)
+
 # nfllook-front
 
 ## Prerequisites:
