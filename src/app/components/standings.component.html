@@ -1,0 +1,28 @@
+<h1 class="page-header">Standings</h1>
+
+<div class="wrapper">
+
+    <div *ngFor="let conf of standings.conferences; let isOdd=odd">
+
+        <div *ngFor="let div of conf.divisions">
+
+            <div class="table_">
+                <div [class]="isOdd ? 'row_ header_ green' : 'row_ header_'">
+                    <div class="cell_">{{conf.name}} {{div.name}}</div>
+                    <div class="cell_">W</div>
+                    <div class="cell_">L</div>
+                    <div class="cell_">D</div>
+                </div>
+                <div class="row_" *ngFor="let team of div.teams">
+                    <div class="cell_">{{team.name}}</div>
+                    <div class="cell_">{{team.wins}}</div>
+                    <div class="cell_">{{team.losses}}</div>
+                    <div class="cell_">{{team.draws}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
